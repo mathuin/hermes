@@ -1,0 +1,102 @@
+SB QST @ ARL $ARLB006
+ARLB006 W1AW 2024 Spring/Summer Operating Schedule
+
+ZCZC AG06
+QST de W1AW
+ARRL Bulletin 6  ARLB006
+From ARRL Headquarters
+Newington CT  March 11, 2024
+To all radio amateurs
+
+SB QST ARL ARLB006
+
+ARLB006 W1AW 2024 Spring/Summer Operating Schedule
+
+Morning Schedule:
+
+Time                  Mode     Days
+-------------------   ----     ---------
+1300 UTC (9 AM EDT)   CWs      Wed, Fri
+1300 UTC (9 AM EDT)   CWf      Tue, Thu
+
+Daily Visitor Operating Hours:
+
+1400 UTC to 1945 UTC - (10 AM to 3:45 PM EDT)
+
+Afternoon/Evening Schedule:
+
+2000 UTC (4 PM EDT)     CWf      Mon, Wed, Fri
+2000  "      "          CWs      Tue, Thu
+2100  "  (5 PM EDT)     CWb      Daily
+2200  "  (6 PM EDT)     DIGITAL  Daily
+2300  "  (7 PM EDT)     CWs      Mon, Wed, Fri
+2300  "      "          CWf      Tue, Thu
+0000  "  (8 PM EDT)     CWb      Daily
+0100  "  (9 PM EDT)     DIGITAL  Daily
+0145  "  (9:45 PM EDT)  VOICE    Daily
+0200  "  (10 PM EDT)    CWf      Mon, Wed, Fri
+0200  "      "          CWs      Tue, Thu
+0300  "  (11 PM EDT)    CWb      Daily
+
+
+                         Frequencies (MHz)
+                         -----------------
+CW: 1.8025 3.5815 7.0475 14.0475 18.0975 21.0675 28.0675 50.350 147.555
+DIGITAL: - 3.5975 7.095 14.095 18.1025 21.095 28.095 50.350 147.555
+VOICE: 1.855 3.990 7.290 14.290 18.160 21.390 28.590 50.350 147.555
+
+Notes:
+
+CWs = Morse Code practice (slow) = 5, 7.5, 10, 13 and 15 WPM
+CWf = Morse Code practice (fast) = 35, 30, 25, 20, 15, 13 and 10 WPM
+CWb = Morse Code Bulletins = 18 WPM
+
+CW frequencies include code practices, Qualifying Runs and CW
+bulletins.
+
+DIGITAL = BAUDOT (45.45 baud), BPSK31 and MFSK16 in a revolving
+schedule.
+
+Code practice texts are from QST, and the source of each practice is
+given at the beginning of each practice and at the beginning of
+alternate speeds.
+
+On Tuesdays and Fridays at 2230 UTC (6:30 PM EDT), Keplerian
+Elements for active amateur satellites are sent on the regular
+digital frequencies.
+
+A DX bulletin replaces or is added to the regular bulletins between
+0000 UTC (8 PM EDT) Thursdays and 0000 UTC (8 PM EDT) Fridays.
+
+Audio from W1AW's CW code practices, and CW/digital/phone bulletins
+is available using EchoLink via the W1AW Conference Server named
+"W1AWBDCT."  The monthly W1AW Qualifying Runs are presented here as
+well.  The CW/digital/phone audio is sent in real-time and runs
+concurrently with W1AW's regular transmission schedule.
+
+All users who connect to the conference server are muted.  Please
+note that any questions or comments about this server should not be
+sent via the "Text" window in EchoLink. Please direct any questions
+or comments to w1aw@arrl.org .
+
+In a communications emergency, monitor W1AW for special bulletins as
+follows: Voice on the hour, Digital at 15 minutes past the hour, and
+CW on the half hour.
+
+FCC licensed amateurs may operate the station from 1400 UTC to 1945
+UTC (10 AM to 3:45 PM EDT) Monday through Friday.  Be sure to bring
+a reference copy of your current FCC amateur radio license.
+
+The weekly W1AW and monthly West Coast Qualifying Runs are sent on
+the normal CW frequencies used for both code practice and bulletin
+transmissions.  West Coast Qualifying Run stations may also use 3590
+kHz.
+
+Please note a W1AW Qualifying Run replaces a regularly scheduled
+code practice transmission on any particular day and time.
+
+The complete W1AW Operating Schedule may be found on page 28 in the
+March 2024 issue of QST or on the web at,
+http://www.arrl.org/w1aw-operating-schedule .
+NNNN
+/EX

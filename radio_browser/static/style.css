@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  flex-shrink: 0;
+}
+
+.widget {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.widget-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.widget-item {
+  margin-left: 10px;
+}
+
+#filter-button {
+  grid-column: 1 / span 3;
+  justify-self: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#current-utc-time {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+#schedule-table {
+  margin-top: 20px;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  flex-grow: 1;
+}
+
+tbody {
+  height: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#app {
+  position: relative;
+}
