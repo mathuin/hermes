@@ -9,7 +9,7 @@ Browses radio schedules to tell you what to tune into right now or in the future
 ```zsh
 % poetry install
 % poetry run flask init-db --drop
-% poetry run flask load-schedule tests/data/arrl.json
+% poetry run flask load-schedule tests/test_commands/arrl.json
 % poetry run flask run --debug
 ```
 
@@ -18,6 +18,26 @@ Now open up a web browser to http://127.0.0.1:5000/.
 You should see a list of schedules with one entry, a list of stations with one entry, and a datetime widget.  Change the datetime widget to Monday, 2300 to 0100 and click `Filter Schedule`.
 
 A table should be displayed showing three events:  Morse code practice, a bulletin transmitted in Morse code, and the same bulletin transmitted with digital modes like PSK31.
+
+## Docker support
+
+The software can be built and deployed as a Docker image.
+
+```zsh
+% docker build -t radio_browser --file docker/Dockerfile .
+% docker run --name radio_browser -p 8888:8888 -it radio_browser
+```
+
+In another window, copy your schedule files to the container, then enter the container to complete configuration:
+
+```zsh
+% docker cp tests/test_commands/arrl.json radio_browser:/root
+% docker exec -it radio_browser bash
+# flask --app radio_browser init-db
+# flask --app radio_browser load-schedule /root/arrl.json
+```
+
+How open up a web browser to http://127.0.0.1:8888/ to see the app.
 
 ## Schedule tools
 
