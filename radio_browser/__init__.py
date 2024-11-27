@@ -32,11 +32,12 @@ def create_app(test_config=None):
     db.init_app(app)
 
     # add commands
-    from radio_browser.commands import init_db, load_schedule, make_arrl_schedule
+    from radio_browser.commands import init_db, load_schedule, make_arrl_schedule, make_wefax_schedule
 
     app.cli.add_command(init_db)
     app.cli.add_command(load_schedule)
     app.cli.add_command(make_arrl_schedule)
+    app.cli.add_command(make_wefax_schedule)
 
     # now routes
     from radio_browser.routes import main_bp

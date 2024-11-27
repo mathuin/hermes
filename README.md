@@ -21,19 +21,26 @@ A table should be displayed showing three events:  Morse code practice, a bullet
 
 ## Schedule tools
 
-In addition to the above commands, there is another command that will build a new ARRL-based schedule, given the most recent ARRL operating schedule bulletin.
+In addition to the above commands, there is another command that will build a new ARRL-based schedule, given the most recent ARRL operating schedule bulletin.  The ARRL bulletins are archived [here](https://www.arrl.org/w1aw-bulletins-archive).
 
 ```zsh
 % poetry run flask make-arrl-schedule bulletin.txt > arrlnew.json
 ```
 
-This new schedule can be loaded as shown above.
-
-Another tool needs to be written to support weather fax schedules.  The current worldwide schedule is available [here](https://www.weather.gov/media/marine/rfax.pdf) in PDF, and also in text format for the five US stations:
+A similar command exists for WEFAX schedules. The current worldwide schedule is available [here](https://www.weather.gov/media/marine/rfax.pdf) in PDF, and also in text format for the five US stations:
 * NOJ (Kodiak, AK) - https://www.weather.gov/media/marine/hfak.txt
 * NMG (New Orleans, LA) - https://www.weather.gov/media/marine/hfgulf.txt
 * KVM70 (Honolulu, HI) - https://www.weather.gov/media/marine/hfhi.txt
 * NMF (Boston, MA) - https://www.weather.gov/media/marine/hfmarsh.txt
+* NMC (Pt. Reyes, CA) - https://www.weather.gov/media/marine/hfreyes.txt
+
+Retrieve the text files, and run the following command:
+
+```zsh
+% poetry run flask make-wefax-schedule hf*txt > wefaxnew.json
+```
+
+Both new files can be imported as per above.
 
 ## More information
 

@@ -46,3 +46,15 @@ def test_make_arrl_schedule(runner):
     result = runner.invoke(args=["make-arrl-schedule", str(bulletin_path)])
     assert result.exit_code == 0, result.output
     assert result.output == expected_output
+
+
+def test_make_wefax_schedule(runner):
+    data_path = Path(__file__).resolve().parent / "test_commands"
+    schedule_path = data_path / "wefax.json"
+    tags = ["ak", "gulf", "hi", "marsh", "reyes"]
+    data_files = [str(data_path / f"hf{tag}.txt") for tag in tags]
+    with open(schedule_path) as file:
+        expected_output = file.read()
+    result = runner.invoke(args=["make-wefax-schedule", *data_files])
+    assert result.exit_code == 0, result.output
+    assert result.output == expected_output
