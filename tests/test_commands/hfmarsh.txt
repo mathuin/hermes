@@ -1,0 +1,93 @@
+BOSTON, MASSACHUSETTS, U.S.A.
+
+CALL SIGN      FREQUENCIES       TIMES (UTC)     EMISSION     POWER
+NMF            4235   kHz     0230z-1039           F3C        4 KW
+               6340.5 kHz     ALL BROADCAST TIMES  F3C        4 KW
+               9110   kHz     ALL BROADCAST TIMES  F3C        4 KW
+              12750   kHz     1400z-2239           F3C        4 KW
+
+TRANS TIME  CONTENTS OF TRANSMISSION                RPM/IOC   VALID MAP
+                                                              TIME AREA
+0230/1400  TEST PATTERN                             120/576
+0233/----  PRELIMINARY SURFACE ANALYSIS             120/576   0000    1
+0243/1405  BROADCAST SCHEDULE (PART 1)              120/576
+0254/1420  BROADCAST SCHEDULE (PART 2)              120/576
+0305/1433  REQUEST FOR COMMENTS                     120/576
+----/1443  PRODUCT NOTICE BULLETIN                  120/576
+----/1453  PRELIMINARY SURFACE ANALYSIS             120/576   1200    1
+----/1503  SATELLITE IMAGE                          120/576   1200    5
+0315/1515  WIND/WAVE ANALYSIS                       120/576   00/12   8
+0325/1525  SURFACE ANALYSIS (PART 1 NE ATLANTIC)    120/576   00/12   2
+0338/1538  SURFACE ANALYSIS (PART 2 NW ATLANTIC)    120/576   00/12   3
+0351/----  SATELLITE IMAGE                          120/576   0000    5
+----/1600  ICE CHART (REBROADCAST)                  120/576   2100
+----/1720  TEST PATTERN                             120/576
+0402/1723  (REBROADCAST OF 0325/1525 NE ATLANTIC)   120/576   00/12   2
+0415/1736  (REBROADCAST OF 0338/1538 NW ATLANTIC)   120/576   00/12   3
+0428/1749  500MB ANALYSIS                           120/576   00/12   4
+----/1759  SEA STATE ANALYSIS                       120/576   1200    4
+0438/----  ICE CHART (REBROADCAST)                  120/576   2100
+----/1810  24HR SURFACE FORECAST                    120/576   1200    4
+0452/1824  CYCLONE DANGER AREA* or HIGH WIND/WAVES  120/576   03/15   7
+----/1835  24HR WIND/WAVE FORECAST                  120/576   1200    4
+----/1855  24HR 500MB FORECAST                      120/576   1200    4
+0745/----  TEST PATTERN                             120/576
+0755/----  PRELIMINARY SURFACE ANALYSIS             120/576   0600    1
+0805/----  24HR SURFACE FORECAST                    120/576   0000    4
+0815/----  24HR WIND/WAVE FORECAST                  120/576   0000    4
+0825/----  24HR 500MB FORECAST                      120/576   0000    4
+0835/1905  36HR 500MB FORECAST                      120/576   12/00   4
+----/1915  96HR SURFACE FORECAST                    120/576   1200    4
+----/1925  96HR WIND/WAVE FORECAST                  120/576   1200    4
+----/1935  96HR 500MB FORECAST                      120/576   1200    4
+----/1945  96HR WAVE PERIOD FORECAST                120/576   1200    4
+0845/1955  48HR SURFACE FORECAST                    120/576   00/12   4
+0855/2005  48HR WIND/WAVE FORECAST                  120/576   00/12   4
+0905/2015  48HR 500MB FORECAST                      120/576   00/12   4
+0915/2025  48HR WAVE PERIOD FORECAST                120/576   00/12   4
+----/2035  PRELIMINARY SURFACE ANALYSIS             120/576   1800    1
+----/2045  72HR SURFACE FORECAST                    120/576   1200    4
+----/2055  72HR WIND/WAVE FORECAST                  120/576   1200    4
+----/2105  72HR 500MB FORECAST                      120/576   1200    4
+----/2115  72HR WAVE PERIOD FORECAST                120/576   1200    4
+0925/2125  SURFACE ANALYSIS (PART 1 NE ATLANTIC)    120/576   06/18   2
+0938/2138  SURFACE ANALYSIS (PART 2 NW ATLANTIC)    120/576   06/18   3
+0951/2151  SATELLITE IMAGE                          120/576   06/18   6
+1002/2202  (REBROADCAST OF 0925/2125 NE ATLANTIC)   120/576   06/18   2
+1015/2215  (REBROADCAST OF 0938/2138 NW ATLANTIC)   120/576   06/18   3
+1028/2228  CYCLONE DANGER AREA* or HIGH WIND/WAVES  120/576   09/21   7
+1039/2239  REBROADCAST/N American Ice Service Chart 120/576   21/21
+
+
+* Tropical Cyclone Danger Area chart replaced by 48HR High Wind/Wave Warning
+chart Dec 01 - May 14 Valid times 00z,06z,12z and 18z, Map area 05N-40N, 35W-100W
+
+
+MAP AREAS  1. 28N-52N, 45W-85W      2. 18N-65N, 10E-45W
+           3. 18N-65N, 40W-95W      4. 18N-65N, 10E-95W
+           5. 20N-55N, 55W-95W      6. EQ-60N, 40W-130W
+           7. 05N-60N,  0W-100W     8. 22N-51N, 40W-98W
+
+NOTES: 1. CARRIER FREQUENCY IS 1.9 kHz BELOW THE ASSIGNED FREQUENCY
+
+Please send comments regarding        Please send comments regarding
+the quality of these charts to:       the quality of this broadcast to:
+
+NATIONAL WEATHER SERVICE/NOAA         U.S. Coast Guard
+MARINE FORECAST BRANCH W/NP41         Communication Command (COMMCOM)
+5200 AUTH ROAD                        4720 DOUGLAS A. MUNRO RD.
+CAMP SPRINGS, MD 20746                CHESAPEAKE, VA 23322-2598
+PHONE: (301) 763-8000 x 7401          (800) 742-8519  (757)421-6240
+FAX:   (301) 763-8085                 COM-SMB-WATCH@uscg.mil
+EMAIL: ncep.list.opc_web@noaa.gov
+
+Tropical cyclone charts also broadcast from New Orleans, LA
+
+If you have access to the World Wide Web be certain to check out
+the following webpages.  See these pages for further links.
+
+https://www.weather.gov            NWS Homepage
+https://www.weather.gov/marine	   NWS Marine Page
+mobile.weather.gov                 Mobile Page
+
+(Schedule effective Sep 04, 2018   Information dated June 17, 2024)
