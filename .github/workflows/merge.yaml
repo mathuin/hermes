@@ -1,0 +1,46 @@
+on:
+  push:
+    branches:
+    - 'main'
+    tags:
+    - 'v*'
+
+env:
+  REGISTRY: "registry.digitalocean.com/bunnymonkey"
+  IMAGE_NAME: "hermes"
+  CLUSTER: "bunnymonkey-prod"
+  NAMESPACE: "hermes"
+  DEPLOYMENT: "hermes"
+
+jobs:
+  publish-to-registry:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout main
+      uses: actions/checkout@v3
+    - name: Build image
+      run: docker build -t $REGISTRY/$IMAGE_NAME -f ./docker/Dockerfile .
+    - name: Install doctl
+      uses: digitalocean/action-doctl@v2
+      with:
+        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+    - name: Log in to container registry
+      run: doctl registry login --expiry-seconds 600
+    - name: Push image to registry
+      run: docker push $REGISTRY/$IMAGE_NAME
+  deploy-to-kubernetes:
+    needs: publish-to-registry
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install doctl
+      uses: digitalocean/action-doctl@v2
+      with:
+        token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+    - name: Save credentials
+      run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 $CLUSTER
+    - name: Restart deployment
+      run: kubectl -n $NAMESPACE rollout restart deployment/$DEPLOYMENT
+    - name: Wait for deployment to finish restarting
+      run: kubectl -n $NAMESPACE rollout status deployment/$DEPLOYMENT
