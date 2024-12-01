@@ -6,20 +6,20 @@ from sqlalchemy import func
 from sqlalchemy.exc import NoResultFound
 from sqlalchemy.orm import aliased
 
-from radio_browser.enum import DayOfWeek
-from radio_browser.extensions import db, time_format
-from radio_browser.filter import DateTimeRange, Event, get_events
-from radio_browser.models import Frequency, MapArea, Schedule, Station, Transmission
-from radio_browser.schemas import frequencies as frequencies_schema
-from radio_browser.schemas import frequency as frequency_schema
-from radio_browser.schemas import map_area as map_area_schema
-from radio_browser.schemas import map_areas as map_areas_schema
-from radio_browser.schemas import schedule as schedule_schema
-from radio_browser.schemas import schedules as schedules_schema
-from radio_browser.schemas import station as station_schema
-from radio_browser.schemas import stations as stations_schema
-from radio_browser.schemas import transmission as transmission_schema
-from radio_browser.schemas import transmissions as transmissions_schema
+from hermes.enum import DayOfWeek
+from hermes.extensions import db, time_format
+from hermes.filter import DateTimeRange, Event, get_events
+from hermes.models import Frequency, MapArea, Schedule, Station, Transmission
+from hermes.schemas import frequencies as frequencies_schema
+from hermes.schemas import frequency as frequency_schema
+from hermes.schemas import map_area as map_area_schema
+from hermes.schemas import map_areas as map_areas_schema
+from hermes.schemas import schedule as schedule_schema
+from hermes.schemas import schedules as schedules_schema
+from hermes.schemas import station as station_schema
+from hermes.schemas import stations as stations_schema
+from hermes.schemas import transmission as transmission_schema
+from hermes.schemas import transmissions as transmissions_schema
 
 main_bp = Blueprint("main", __name__)
 

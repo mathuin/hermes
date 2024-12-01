@@ -1,9 +1,9 @@
 from datetime import datetime, time
 from typing import ClassVar
 
-from radio_browser.enum import DayOfWeek, EmissionType
-from radio_browser.extensions import time_format
-from radio_browser.models import Frequency, Station, Transmission
+from hermes.enum import DayOfWeek, EmissionType
+from hermes.extensions import time_format
+from hermes.models import Frequency, Station, Transmission
 
 
 class DateTimeRange:

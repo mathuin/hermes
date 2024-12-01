@@ -1,9 +1,9 @@
 from datetime import time
 from pprint import pprint
 
-from radio_browser.enum import DayOfWeek, EmissionType
-from radio_browser.filter import DateTimeRange, get_emissions, get_events
-from radio_browser.models import Frequency, TimeList, Transmission
+from hermes.enum import DayOfWeek, EmissionType
+from hermes.filter import DateTimeRange, get_emissions, get_events
+from hermes.models import Frequency, TimeList, Transmission
 
 
 def test_in_range_same_day():

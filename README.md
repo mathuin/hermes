@@ -1,6 +1,6 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 
-# radio-browser
+# hermes
 
 Browses radio schedules to tell you what to tune into right now or in the future.
 
@@ -24,17 +24,17 @@ A table should be displayed showing three events:  Morse code practice, a bullet
 The software can be built and deployed as a Docker image.
 
 ```zsh
-% docker build -t radio_browser --file docker/Dockerfile .
-% docker run --name radio_browser -p 8888:8888 -it radio_browser
+% docker build -t hermes --file docker/Dockerfile .
+% docker run --name hermes -p 8888:8888 -it hermes
 ```
 
 In another window, copy your schedule files to the container, then enter the container to complete configuration:
 
 ```zsh
-% docker cp tests/test_commands/arrl.json radio_browser:/root
-% docker exec -it radio_browser bash
-# flask --app radio_browser init-db
-# flask --app radio_browser load-schedule /root/arrl.json
+% docker cp tests/test_commands/arrl.json hermes:/root
+% docker exec -it hermes bash
+# flask --app hermes init-db
+# flask --app hermes load-schedule /root/arrl.json
 ```
 
 How open up a web browser to http://127.0.0.1:8888/ to see the app.

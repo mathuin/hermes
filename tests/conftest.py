@@ -2,10 +2,10 @@ from datetime import date, time
 
 import pytest
 
-from radio_browser import create_app
-from radio_browser.enum import DayOfWeek, EmissionType
-from radio_browser.extensions import db
-from radio_browser.models import Frequency, MapArea, Schedule, Station, TimeList, TimeRange, Transmission
+from hermes import create_app
+from hermes.enum import DayOfWeek, EmissionType
+from hermes.extensions import db
+from hermes.models import Frequency, MapArea, Schedule, Station, TimeList, TimeRange, Transmission
 
 
 @pytest.fixture(scope="function")

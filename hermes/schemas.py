@@ -1,8 +1,8 @@
 from marshmallow import fields
 from marshmallow_sqlalchemy import SQLAlchemySchema
 
-from radio_browser import enum, models
-from radio_browser.extensions import date_format, time_format
+from hermes import enum, models
+from hermes.extensions import date_format, time_format
 
 
 class Schema(SQLAlchemySchema):

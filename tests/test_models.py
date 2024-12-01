@@ -1,7 +1,7 @@
 from datetime import time
 
-from radio_browser.enum import EmissionType
-from radio_browser.models import TimeRange, Transmission
+from hermes.enum import EmissionType
+from hermes.models import TimeRange, Transmission
 
 
 def test_schedule_creation(schedule):

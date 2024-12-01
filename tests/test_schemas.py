@@ -1,4 +1,4 @@
-from radio_browser import schemas
+from hermes import schemas
 
 
 def test_schedule(schedule):
