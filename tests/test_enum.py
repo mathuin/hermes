@@ -1,6 +1,6 @@
 from sqlalchemy.dialects.sqlite import dialect
 
-from radio_browser.enum import DayOfWeek, EmissionType, Enums
+from hermes.enum import DayOfWeek, EmissionType, Enums
 
 
 def test_enums_process_bind_params():

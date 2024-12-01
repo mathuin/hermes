@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "radio-browser"
+name = "hermes"
 version = "0.1.0"
 description = "A simple tool to facilitate browsing of broadcast radio schedules."
 authors = ["Jack Twilley <mathuin@gmail.com>"]
@@ -23,7 +23,7 @@ pyfakefs = "^5.7.1"
 
 [tool.coverage.run]
 branch = true
-source = ["radio_browser"]
+source = ["hermes"]
 
 [tool.coverage.report]
 show_missing = true
@@ -64,13 +64,13 @@ allowlist_externals = ["poetry"]
 commands_pre = [["poetry", "install"]]
 
 [tool.tox.env.lint]
-commands = [["poetry", "run", "ruff", "check", "radio_browser", "tests"]]
+commands = [["poetry", "run", "ruff", "check", "hermes", "tests"]]
 
 [tool.tox.env.format]
-commands = [["poetry", "run", "ruff", "format", "radio_browser", "tests"]]
+commands = [["poetry", "run", "ruff", "format", "hermes", "tests"]]
 
 [tool.tox.env.type]
-commands = [["poetry", "run", "mypy", "radio_browser", "tests"]]
+commands = [["poetry", "run", "mypy", "hermes", "tests"]]
 
 [tool.tox.env.py313]
 commands = [["poetry", "run", "pytest"]]

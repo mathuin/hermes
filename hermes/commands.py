@@ -10,13 +10,13 @@ from flask import Flask
 from flask.cli import with_appcontext
 from sqlalchemy.exc import IntegrityError
 
-from radio_browser.extensions import date_format, db
-from radio_browser.models import Frequency, MapArea, Schedule, Station, TimeList, TimeRange, Transmission
-from radio_browser.schemas import frequency as frequency_schema
-from radio_browser.schemas import map_area as map_area_schema
-from radio_browser.schemas import schedule as schedule_schema
-from radio_browser.schemas import station as station_schema
-from radio_browser.schemas import transmission as transmission_schema
+from hermes.extensions import date_format, db
+from hermes.models import Frequency, MapArea, Schedule, Station, TimeList, TimeRange, Transmission
+from hermes.schemas import frequency as frequency_schema
+from hermes.schemas import map_area as map_area_schema
+from hermes.schemas import schedule as schedule_schema
+from hermes.schemas import station as station_schema
+from hermes.schemas import transmission as transmission_schema
 
 
 @click.command("init-db")

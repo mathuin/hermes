@@ -1,8 +1,8 @@
 import json
 
-from radio_browser import create_app
-from radio_browser.extensions import db
-from radio_browser.schemas import schedule as schedule_schema
+from hermes import create_app
+from hermes.extensions import db
+from hermes.schemas import schedule as schedule_schema
 
 
 def test_init_db_command(runner, app):

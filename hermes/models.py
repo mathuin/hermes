@@ -5,8 +5,8 @@ from sqlalchemy import ForeignKey, UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.schema import ForeignKeyConstraint
 
-from radio_browser.enum import DayOfWeek, EmissionType, Enums
-from radio_browser.extensions import date_format, db, time_format
+from hermes.enum import DayOfWeek, EmissionType, Enums
+from hermes.extensions import date_format, db, time_format
 
 
 class Schedule(db.Model):  # type: ignore[name-defined]
